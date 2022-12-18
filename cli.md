@@ -34,3 +34,11 @@ $ yarn patch-package *
 ```bash
 $ npx depcheck
 ```
+
+webp格式统一转换
+```bash
+$ for file in *
+> do
+> cwebp -q 80 "$file" -o "${file%.png}.webp"
+> done
+```
