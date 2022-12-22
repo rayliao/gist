@@ -42,3 +42,9 @@ $ for file in *
 > cwebp -q 80 "$file" -o "${file%.png}.webp"
 > done
 ```
+
+使用淘宝镜像
+```bash
+npm config set registry https://registry.npmmirror.com
+yarn config set registry https://registry.npmmirror.com
+```
